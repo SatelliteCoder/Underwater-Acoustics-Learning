@@ -27,7 +27,7 @@
 
 ## 首批推荐
 
-| 方向 | 推荐资源 | 为什么值得看 |
+| 方向 | 推荐资源 | 说明 |
 | --- | --- | --- |
 | 水声传播 | [Acoustics Toolbox](https://oalib-acoustics.org/website_resources/AcousticsToolbox/) | BELLHOP、KRAKEN、SCOOTER 等经典模型入口 |
 | Python 工具 | [arlpy](https://github.com/org-arl/arlpy) | 包含 underwater acoustics、beamforming、signal processing |

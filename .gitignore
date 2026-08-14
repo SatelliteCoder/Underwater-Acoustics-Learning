@@ -8,3 +8,5 @@ Thumbs.db
 tmp/
 *.log
 
+# Private or copyrighted local references
+local-materials/

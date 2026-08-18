@@ -1,4 +1,4 @@
-# 水下目标识别开源模型与数据集汇总（增补版）
+# 水下目标识别开源模型与数据集汇总
 
 > 分为**被动声呐辐射噪声数据集**、**成像声呐图像数据集**、**开源模型代码库**、**降噪与仿真参考项目**四大部分。
 > ⚠️重要提醒：**没有海洋环境真实UUV辐射噪声开源数据集**；`QiandaoEar22`是唯一公开有UUV样本，但为**千岛湖淡水湖数据**；海洋UUV噪声基本涉密不公开。
@@ -20,7 +20,7 @@
 
 ### 新增数据集（8项）
 
-#### 1. Oceanship — 大规模水下音频目标识别数据集【新增】
+#### 1. Oceanship — 大规模水下音频目标识别数据集
 - **开源地址**: [https://github.com/lizeyujack/oceanship](https://github.com/lizeyujack/oceanship)
 - **论文**: [arXiv:2401.02099](https://arxiv.org/abs/2401.02099)（上海交通大学）
 - **数据类型**: WAV音频 + 文本描述对（audio-text pairs）
@@ -28,7 +28,7 @@
 - **用途**: 水下声学目标识别（UATR）、零样本分类、音频检索
 - **限制**: 与DeepShip同源（ONC数据库），但类别更丰富；❌ 无UUV样本
 
-#### 2. VTUAD — 船舶类型水下声学数据集【新增】
+#### 2. VTUAD — 船舶类型水下声学数据集
 - **开源地址**: [IEEE DataPort](https://ieee-dataport.org/documents/vtuad-vessel-type-underwater-acoustic-data)
 - **代码**: [onc_dataset](https://github.com/lucascesarfd/onc_dataset) / [underwater_snd](https://github.com/lucascesarfd/underwater_snd)
 - **论文**: [IEEE Access 2022](https://ieeexplore.ieee.org/document/9940921)
@@ -36,21 +36,21 @@
 - **标注情况**: 5类（拖船/油轮/货船/客船/背景噪声），基于AIS自动标注
 - **限制**: 基于AIS自动标注；❌ 无UUV样本
 
-#### 3. UPAD — 大规模被动声呐基准数据集【新增】
+#### 3. UPAD — 大规模被动声呐基准数据集
 - **开源地址**: [论文 OCEANS 2024](https://ieeexplore.ieee.org/document/10706638)
 - **机构**: 美国海军研究实验室（NRL）
 - **数据类型**: 被动声呐原始信号，HARP数据
 - **标注情况**: 利用AIS进行多标签分类标注
 - **限制**: 较新，社区使用尚少；❌ 无UUV样本
 
-#### 4. Wolfset — 高质量水下声学数据集【新增】
+#### 4. Wolfset — 高质量水下声学数据集
 - **开源地址**: [Figshare](https://figshare.com/articles/dataset/_i_Wolfset_A_High-Quality_Underwater_Acoustic_Dataset_for_Algorithm_Development_and_Analysis_i_/25791978)
 - **论文**: [Scientific Data 2025](https://www.nature.com/articles/s41597-025-05564-x)
 - **数据类型**: WAV音频（约1.5GB，168个文件），多种舷外/电动马达声源
 - **用途**: 水声算法开发基准，**适合UUV/小型船舶辐射噪声研究**
 - **限制**: 使用遥控船模型马达（非全尺寸船舶），受控实验环境
 
-#### 5. DS3500 — 深海声影区船舶辐射噪声增强数据集【新增】
+#### 5. DS3500 — 深海声影区船舶辐射噪声增强数据集
 - **开源地址**: [HuggingFace](https://huggingface.co/datasets/peng7554/DS3500)
 - **机构**: 中山大学海洋工程与技术学院
 - **数据类型**: WAV音频（16kHz），1948个5秒片段
@@ -58,20 +58,20 @@
 - **用途**: 水声目标识别 + 目标定位多任务学习
 - **限制**: 基于ShipsEar通过BELLHOP仿真增强（非全新采集）
 
-#### 6. Belgian North Sea Vessel Acoustic Dataset【新增】
+#### 6. Belgian North Sea Vessel Acoustic Dataset
 - **开源地址**: [GitHub](https://github.com/woutdecrop/audio_vessel_distance_categorizer)
 - **论文**: [IEEE JSTARS 2025](https://ieeexplore.ieee.org/document/11105453)
 - **数据类型**: WAV音频，26,465个标注片段，116天连续采集
 - **标注情况**: AIS窗口法标注船舶位置/速度/类型/活动，按距离分档
 - **限制**: 浅海高噪声海域；❌ 无UUV样本
 
-#### 7. WMMD — Watkins海洋哺乳动物声音数据库【新增】
+#### 7. WMMD — Watkins海洋哺乳动物声音数据库
 - **开源地址**: [HuggingFace](https://huggingface.co/datasets/watkins-marine-mammal-sound-database-full-cuts)
 - **数据类型**: WAV音频，~1,754个录音，32种海洋哺乳动物
 - **用途**: **迁移学习预训练**（特征提取器预训练）
 - **限制**: 非船舶噪声，但可用于水下声学预训练
 
-#### 8. ONC — 加拿大海洋网络水文数据库【新增】
+#### 8. ONC — 加拿大海洋网络水文数据库
 - **开源地址**: [数据门户](https://data.oceannetworks.ca/) / [下载工具 GitHub](https://github.com/Spiffical/onc-hydrophone-data)
 - **数据类型**: 原始水文音频（FLAC格式），海量数据，2007年至今
 - **标注情况**: ❌ 无标签
@@ -93,54 +93,54 @@
 
 ### 新增数据集（8项 + 7项补充索引）
 
-#### 1. SCTD — 声呐通用目标检测数据集【新增】
+#### 1. SCTD — 声呐通用目标检测数据集
 - **GitHub**: [freepoet/SCTD](https://github.com/freepoet/SCTD) / [Baseline代码](https://github.com/automlresearch/autodetector)
 - **数据类型**: 混合多类型声呐（SSS+FLS+SAS）灰度图像，497张/596目标
 - **标注**: ✅ PASCAL VOC XML格式（附voc2coco.py转换脚本）
 - **说明**: ⭐可直接用于YOLO/Faster-RCNN；规模较小
 
-#### 2. FLSDD — 前视声呐目标检测数据集【新增】
+#### 2. FLSDD — 前视声呐目标检测数据集
 - **GitHub**: [Forward-looking-Sonar-Detection-Dataset](https://github.com/XingYZhu/Forward-looking-Sonar-Detection-Dataset)
 - **数据类型**: 前视声呐(FLS)灰度图像，Oculus M1200d
 - **标注**: ✅ PASCAL VOC XML格式，3类（victim/boat/plane）
 - **说明**: ⭐可直接用于YOLO；南开大学
 
-#### 3. NKSID — 南开声呐图像数据集【新增】
+#### 3. NKSID — 南开声呐图像数据集
 - **GitHub**: [NK-Sonar-Image-Dataset](https://github.com/Jorwnpay/NK-Sonar-Image-Dataset)
 - **论文**: [ESWA 2024](https://www.sciencedirect.com/science/article/pii/S0957417424003609)
 - **数据类型**: 多波束前视声呐灰度图像，2617张，渤海湾采集
 - **标注**: 8类分类标签（非bbox），长尾分布
 - **说明**: ⚠️ 为分类数据集，检测需自行标注；适合开集识别研究
 
-#### 4. SeabedObjects-KLSG — 海底物体数据集【新增】
+#### 4. SeabedObjects-KLSG — 海底物体数据集
 - **GitHub**: [SeabedObjects-Ship-and-Airplane-dataset](https://github.com/huoguanying/SeabedObjects-Ship-and-Airplane-dataset)
 - **Kaggle扩展版**: [seabedobjects-klsg-dataset](https://www.kaggle.com/datasets/enochkwatehdongbo/seabedobjects-klsg-dataset)（1190张）
 - **论文**: [IEEE 2020](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9026963)
 - **数据类型**: 侧扫声呐(SSS)灰度图像
 - **标注**: 分类标签（无bbox）；GitHub版2类，Kaggle版含沉船/人体/水雷
 
-#### 5. Marine Debris FLS Datasets【新增】
+#### 5. Marine Debris FLS Datasets
 - **GitHub**: [marine-debris-fls-datasets](https://github.com/mvaldenegro/marine-debris-fls-datasets)
 - **论文**: [arXiv:2503.22880](https://arxiv.org/abs/2503.22880)（OCEANS 2025 Brest）
 - **数据类型**: 前视声呐(FLS)灰度图像，约2471张，ARIS Explorer 3000
 - **标注**: ✅ 语义分割标注（逐像素标签，11类+背景）
 - **说明**: 2026年1月仍活跃更新；⚠️ 为分割任务非bbox检测
 
-#### 6. LSOD — 远程声呐目标数据集【新增】
+#### 6. LSOD — 远程声呐目标数据集
 - **GitHub**: [Jelly0618/LSOD](https://github.com/Jelly0618/LSOD)
 - **百度网盘**: [下载链接](https://pan.baidu.com/s/1-_HiJA2GwqgDaHQVUDMPuw) (提取码: 7jnm)
 - **论文**: [ESWA 2025](https://www.sciencedirect.com/science/article/pii/S095741742501992X)
 - **数据类型**: 前视声呐(FLS)灰度图像，不同距离（3-40m）
 - **用途**: 远程水下搜救小目标检测
 
-#### 7. SSS for Mine Detection — 侧扫声呐水雷检测【新增】
+#### 7. SSS for Mine Detection — 侧扫声呐水雷检测
 - **Figshare**: [Side-scan sonar imaging for Mine detection](https://figshare.com/articles/dataset/_i_Side-scan_sonar_imaging_for_Mine_detection_i_/24574879)
 - **论文**: [Data in Brief 2024](https://www.sciencedirect.com/science/article/pii/S2352340924001045)
 - **数据类型**: 侧扫声呐(SSS)灰度图像，1170张
 - **标注**: ✅ 目标检测标注，1类（水雷Mines）
 - **用途**: MCM反水雷研究
 
-#### 8. SWDD — 侧扫声呐墙体检测数据集【新增】
+#### 8. SWDD — 侧扫声呐墙体检测数据集
 - **Zenodo**: [SWDD](https://zenodo.org/records/13692547)
 - **论文**: [arXiv:2410.10554](https://arxiv.org/abs/2410.10554)（ROSAR框架, 2024）
 - **数据类型**: 侧扫声呐(SSS)灰度图像，7904张
@@ -177,7 +177,7 @@
 
 ### 新增模型（7项）
 
-#### 1. Audio Vessel Classifier — CLAP迁移学习【新增·对比学习】
+#### 1. Audio Vessel Classifier — CLAP迁移学习【对比学习】
 - **GitHub**: [ai4os-hub/audio-vessel-classification](https://github.com/ai4os-hub/audio-vessel-classification)
 - **论文**: [IEEE JSTARS 2025](https://ieeexplore.ieee.org/document/11105453)
 - **模型**: CLAP-LAION对比学习迁移
@@ -185,14 +185,14 @@
 - **任务**: 船舶距离分类（11类）
 - **说明**: 跨模态对比学习路线，Docker化部署
 
-#### 2. SSL-Acoustic — DINO自监督声学特征学习【新增·自监督】
+#### 2. SSL-Acoustic — DINO自监督声学特征学习【自监督】
 - **GitHub**: [ahmetpala/SSL-Acoustic](https://github.com/ahmetpala/SSL-Acoustic)
 - **论文**: [Ecological Informatics 2024](https://doi.org/10.1016/j.ecoinf.2024.102533)
 - **模型**: DINO自监督学习（teacher-student + EMA），ResNet/ViT骨干
 - **任务**: 无需标注的自监督特征提取
 - **说明**: Apache-2.0；适合利用ONC大规模无标签数据
 
-#### 3. Sonar-OLTR / DMCL — 动态边际对比学习【新增·对比学习·开集识别】
+#### 3. Sonar-OLTR / DMCL — 动态边际对比学习【对比学习·开集识别】
 - **GitHub**: [gmgslinyu/Sonar-OLTR](https://github.com/gmgslinyu/Sonar-OLTR)
 - **论文**: [PMC12214808](https://pmc.ncbi.nlm.nih.gov/articles/PMC12214808/)
 - **模型**: DMCL动态边际对比学习
@@ -200,7 +200,7 @@
 - **任务**: 长尾声呐图像开集识别
 - **说明**: 代码以.rar压缩包发布
 
-#### 4. DSS-Net — 动静态分离网络【新增·降噪】
+#### 4. DSS-Net — 动静态分离网络【降噪】
 - **GitHub**: [ydchen0806/dss_net](https://github.com/ydchen0806/dss_net)
 - **预训练权重**: [HuggingFace](https://huggingface.co/cyd0806/dss_net_checkpoints)
 - **模型**: 双解码器U-Net + SE注意力
@@ -208,21 +208,21 @@
 - **任务**: 水声(UWA)信道去噪
 - **说明**: MIT协议；含抚仙湖海试验证；可分离UUV噪声中的稳定机械特征与时变海洋噪声
 
-#### 5. AquaSignature — CRNN水下威胁检测【新增·端到端】
+#### 5. AquaSignature — CRNN水下威胁检测【端到端】
 - **GitHub**: [Dhanushi2620/AquaSignature](https://github.com/Dhanushi2620/AquaSignature)
 - **模型**: CRNN（CNN+LSTM）
 - **输入**: .wav海洋声学文件，提取MFCC特征
 - **任务**: 水下威胁检测与分类 + 频率告警
 - **说明**: TensorFlow/Keras；轻量级项目
 
-#### 6. Sonar-AUV-Hybrid-Pipeline — YOLO声呐鱼群检测【新增·声呐检测】
+#### 6. Sonar-AUV-Hybrid-Pipeline — YOLO声呐鱼群检测【声呐检测】
 - **GitHub**: [Chandresh-Gohel/Sonar-AUV-Hybrid-Pipeline](https://github.com/Chandresh-Gohel/Sonar-AUV-Hybrid-Pipeline)
 - **论文**: [arXiv:2207.09295](https://arxiv.org/abs/2207.09295)（ECCV 2022，数据集论文）
 - **模型**: YOLO（支持YOLOv5/v8/v11/v26）
 - **输入**: 声呐图像（ARIS声呐视频帧）
 - **任务**: 声呐图像鱼群检测
 
-#### 7. SonarDetection — YOLO+生成式数据增强【新增·生成式增强】
+#### 7. SonarDetection — YOLO+生成式数据增强【生成式增强】
 - **GitHub**: [xijier/SonarDetection](https://github.com/xijier/SonarDetection)
 - **模型**: YOLOv5/v7 + Faster R-CNN + Stable Diffusion + LoRA + ControlNet
 - **输入**: 声呐图像
@@ -246,33 +246,33 @@
 
 ### 新增项目（5项）
 
-#### 1. Underwater Noise Filter for Fish Detection【新增·CNN降噪】
+#### 1. Underwater Noise Filter for Fish Detection【CNN降噪】
 - **GitHub**: [ecosilentia/Underwater-noise-filter-for-fish-detection](https://github.com/ecosilentia/Underwater-noise-filter-for-fish-detection)
 - **功能**: CNN去除水下甲壳类动物"咔嗒"声
 - **框架**: Keras/TensorFlow + Streamlit
 - **与UUV关联**: 水下窄带脉冲噪声CNN滤波方法可迁移用于滤除UUV噪声识别中的生物干扰
 
-#### 2. uacpy — Python水声学工具包【新增·信道仿真】
+#### 2. uacpy — Python水声学工具包【信道仿真】
 - **GitHub**: [ErVuL/uacpy](https://github.com/ErVuL/uacpy)
 - **功能**: BELLHOP/Acoustics Toolbox的Python高级接口
 - **支持模型**: Bellhop(射线) / Kraken(简正波) / Scooter(有限元) / SPARC(FFP) / RAM(抛物方程) / OASES
 - **说明**: 118 commits，2026年7月仍非常活跃；38个示例脚本
 - **与UUV关联**: 比单独BELLHOP更完整，可生成UUV噪声识别模型的训练数据
 
-#### 3. PyRAM — RAM抛物方程Python实现【新增·信道仿真】
+#### 3. PyRAM — RAM抛物方程Python实现【信道仿真】
 - **GitHub**: [marcuskd/pyram](https://github.com/marcuskd/pyram)
 - **功能**: RAM v1.5纯Python实现，Numba JIT编译
 - **协议**: BSD-3-Clause
 - **与UUV关联**: 可仿真UUV在斜坡海底等复杂距离相关环境中的声传播特性
 
-#### 4. UWA Channel Toolbox — 实测水声信道重放【新增·信道仿真】
+#### 4. UWA Channel Toolbox — 实测水声信道重放【信道仿真】
 - **GitHub**: [uwa-channels/python](https://github.com/uwa-channels/python)
 - **功能**: 实测信道重放 + 真实海洋噪声生成 + 脉冲响应解包
 - **安装**: `pip install uwa-channels`
 - **说明**: 21个releases，MIT协议，2026年8月仍活跃
 - **与UUV关联**: 使用实测信道数据（非纯仿真），noisegen可生成真实统计特性海洋噪声
 
-#### 5. Side-Scan Sonar Image Synthesis — GAN/扩散数据增强【新增·数据增强】
+#### 5. Side-Scan Sonar Image Synthesis — GAN/扩散数据增强【数据增强】
 - **GitHub**: [PaweekornS/underwater_sonar](https://github.com/PaweekornS/underwater_sonar)
 - **功能**: 三种生成策略合成声呐图像：过程化(半合成) + GAN(StyleGAN3/Pix2Pix) + 扩散模型(DDPM)
 - **框架**: YOLO/Ultralytics, StyleGAN3, DDPM
@@ -293,7 +293,7 @@
 
 ---
 
-## 六、整体实验工作流参考（更新版）
+## 六、整体实验工作流参考
 
 ```
 【数据准备阶段】

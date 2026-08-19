@@ -1,6 +1,5 @@
 # 🌊 Underwater Acoustics Learning
 
-[![Link check](https://github.com/SatelliteCoder/Underwater-Acoustics-Learning/actions/workflows/link-check.yml/badge.svg)](https://github.com/SatelliteCoder/Underwater-Acoustics-Learning/actions/workflows/link-check.yml)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 
 > 📚 水声学开源学习平台，系统整理水声传播、声场仿真、声呐与感知装备仿真、水声通信、UUV/环境噪声、被动声学监测、水声目标识别、水声定位、水声数据处理、信号增强、开源数据集、论文与课程资料。

@@ -8,7 +8,7 @@
 
 > 📚 水声学开源学习平台，系统整理水声传播、声场仿真、声呐与感知装备仿真、水声通信、UUV/环境噪声、被动声学监测、水声目标识别、水声定位、水声数据处理、信号增强、开源数据集、论文与课程资料。
 >
-> 本项目参考 [Navigation‑Learning](https://github.com/LiZhengXiao99/Navigation‑Learning) 的学习型仓库组织方式，内容聚焦 **underwater acoustics / ocean acoustics / sonar**。
+> 本项目内容聚焦 **underwater acoustics / ocean acoustics / sonar**。
 > - 资源名称：直接跳转仓库/网站/数据集入口
 > - `详情`：跳转仓库内中文解析笔记
 

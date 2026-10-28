@@ -422,6 +422,12 @@
     <td><a href="docs/项目详细解析.md#shipsear">详情</a></td>
   </tr>
   <tr>
+    <td><a href="https://huggingface.co/datasets/suniltyagi/underwater-acoustic-synthetic-dataset">Underwater-Acoustic-Synthetic-Dataset</a></td>
+    <td>合成船舶噪声数据集</td>
+    <td>四类船舶与海洋环境噪声的合成片段（非实录），练习分类数据流程</td>
+    <td><a href="docs/项目详细解析.md#underwater-acoustic-synthetic-dataset">详情</a></td>
+  </tr>
+  <tr>
     <td><a href="https://github.com/meridian-acoustics/ketos">Ketos</a></td>
     <td>水声AI工具包</td>
     <td>水下声学检测、分类模型训练流水线</td>
@@ -591,6 +597,18 @@
     <td>文献索引</td>
     <td>成像声呐、声呐SLAM、水下机器人感知论文集合</td>
     <td><a href="docs/项目详细解析.md#sonar-litreview">详情</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2609.07399">SKANN 开集船舶重识别（arXiv:2609.07399）</a></td>
+    <td>预印本论文</td>
+    <td>船舶辐射噪声开集重识别、原始波形网络与 Cross-Passage 评估协议</td>
+    <td><a href="docs/论文与综述资料.md#skann-vessel-reid">详情</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://suniltyagi.in/notes/vessel-re-identification/">Re-identifying vessels from radiated noise</a></td>
+    <td>专题笔记</td>
+    <td>嵌入向量、图库与免重训练登记新船，附可运行 NumPy 示例</td>
+    <td><a href="docs/论文与综述资料.md#vessel-reid-note">详情</a></td>
   </tr>
 </table>
 
